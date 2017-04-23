@@ -18,6 +18,7 @@ from django.contrib import admin
 from ASS.views import location
 
 urlpatterns = [
+    url(r'^$', location),
     url(r'^admin/', admin.site.urls),
     url(r'^ASA/', location),
 ]
